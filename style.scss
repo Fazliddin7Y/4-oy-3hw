@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: rgba(19, 61, 141, 1);
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 35px;
+            align-items: center;
+            text-align: center;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                margin-bottom: 5px;
+                font-size: 14px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .phone {
+                font-size: 14px;
+            }
+        }
+
+        .icon {
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .nav-menu {
+        border-top: 1px solid #333;
+        margin-top: 10px;
+        padding-top: 10px;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+
+            li {
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 14px;
+
+                    &:hover {
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content {
+    padding: 40px 0;
+    text-align: center;
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    p {
+        font-size: 16px;
+        color: #ccc;
+    }
+}
+
+//hero section
+
+
+.vacancies {
+    padding: 20px;
+
+    h1 {
+        text-align: center;
+        color: #333;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .breadcrumb {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #777;
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        span {
+            color: #333;
+        }
+    }
+
+    .category {
+        text-align: center;
+
+        h2 {
+            font-size: 22px;
+            color: #0056b3;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #0056b3;
+            display: inline-block;
+        }
+    }
+
+    .vacancies-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+        padding: 0 20px;
+
+        .vacancy-card {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+            }
+
+            h3 {
+                font-size: 18px;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                list-style: none;
+                margin-bottom: 15px;
+                padding-left: 0;
+
+                li {
+                    font-size: 14px;
+                    color: #555;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+            .details-btn {
+                background-color: #0056b3;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 14px;
+                text-transform: uppercase;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #003d80;
+                }
+
+                &:active {
+                    background-color: #002952;
+                }
+            }
+        }
+    }
+}
+
+//footer 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #003d80;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    grid-template-areas:
+        "logo logo"
+        "links contact";
+}
+
+.footer-logo {
+    grid-area: logo;
+    text-align: center;
+}
+
+.footer-logo h2 {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-links {
+    grid-area: links;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ffcc00;
+}
+
+.footer-contact {
+    grid-area: contact;
+}
+
+.footer-contact address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.footer-contact address a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact address a:hover {
+    color: #ffcc00;
+}
